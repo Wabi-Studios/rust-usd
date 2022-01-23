@@ -1,0 +1,15 @@
+if(APPLE AND NOT UNIX)
+  set(LIB_EXT "dylib")
+elseif(UNIX)
+  set(LIB_EXT "so")
+else()
+  set(LIB_EXT "dll.lib")
+endif()
+
+project(wabi_maelstrom)
+cmake_minimum_required(VERSION 2.6)
+file(GLOB SRCS src/*.c src/*.cpp src/*.cc src/*.h src/*.hpp)
+# add_library(wabi ${SRCS})
+add_executable(wabi ${SRCS})
+
+target_link_libraries(wabi ${CMAKE_SOURCE_DIR}/target/debug/wabi.${LIB_EXT})

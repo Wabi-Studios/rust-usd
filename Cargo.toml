@@ -1,0 +1,16 @@
+[package]
+name = "wabi-usd"
+version = "0.1.0"
+authors = ["Furby <tyler@tylerfurby.com>", "Wabi Animation <devs@wabi.foundation>"]
+edition = "2021"
+license = "GPL-3.0"
+keywords = ["animation", "graphics", "film"]
+description = "Rust bindings for Pixar Universal Scene Description."
+homepage = "https://wabi.foundation/"
+documentation = "https://docs.wabi.foundation/"
+repository = "https://github.com/Wabi-Studios/Project-X/"
+readme = "README.md"
+
+[lib]
+name = "wabi"
+crate-type = ["dylib"]
