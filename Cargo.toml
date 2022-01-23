@@ -8,7 +8,7 @@ keywords = ["animation", "graphics", "film"]
 description = "Rust bindings for Pixar Universal Scene Description."
 homepage = "https://wabi.foundation/"
 documentation = "https://docs.wabi.foundation/"
-repository = "https://github.com/Wabi-Studios/Project-X/"
+repository = "https://github.com/Wabi-Studios/rust-usd/"
 readme = "README.md"
 
 [lib]
